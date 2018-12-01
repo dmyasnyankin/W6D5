@@ -31,7 +31,7 @@ class Clock extends React.Component {
    seconds = (seconds < 10) ? `0${seconds}` : seconds;
     return (
       <div>  
-      <h2>Clock</h2>
+      <h1>Clock</h1>
       <span>{hours}:{minutes}:{seconds} PDT
              </span>
           

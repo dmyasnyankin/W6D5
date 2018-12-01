@@ -1,11 +1,13 @@
 #main {
   background-color: #e50b31;
-  font-family: 'Kumar One Outline', cursive;
-  color: yellow;
+  font-family: 'Luckiest Guy', cursive;
+  color: orange;  
   display: flex;
   justify-content: center;
+  -webkit-text-stroke: 1px black;
 }
 
 .yo-mama {
   background-color: black;
 }
+

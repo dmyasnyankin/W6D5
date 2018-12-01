@@ -161,7 +161,7 @@ function (_React$Component) {
       hours = hours < 10 ? "0".concat(hours) : hours;
       minutes = minutes < 10 ? "0".concat(minutes) : minutes;
       seconds = seconds < 10 ? "0".concat(seconds) : seconds;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Clock"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, hours, ":", minutes, ":", seconds, " PDT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Date: ", this.state.time.toDateString()));
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Clock"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, hours, ":", minutes, ":", seconds, " PDT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Date: ", this.state.time.toDateString()));
     }
   }]);
 
