@@ -136,6 +136,16 @@ function (_React$Component) {
   }
 
   _createClass(Clock, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.intervalId = setInterval(this.tick, 1000);
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      clearInterval(this.intervalId);
+    }
+  }, {
     key: "tick",
     value: function tick() {
       this.setState({
@@ -145,7 +155,13 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Clock"));
+      var hours = this.state.time.getHours();
+      var minutes = this.state.time.getMinutes();
+      var seconds = this.state.time.getSeconds();
+      hours = hours < 10 ? "0".concat(hours) : hours;
+      minutes = minutes < 10 ? "0".concat(minutes) : minutes;
+      seconds = seconds < 10 ? "0".concat(seconds) : seconds;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Clock"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, hours, ":", minutes, ":", seconds, " PDT"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Date: ", this.state.time.toDateString()));
     }
   }]);
 
